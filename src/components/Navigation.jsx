@@ -24,6 +24,7 @@ const Navigation = () => {
         { name: 'Admin', path: '/administration' },
         { name: 'Blogs', path: '/blogs' },
         { name: 'Social', path: '/social' },
+        { name: 'Contact', path: '/contact' },
     ];
 
     return (

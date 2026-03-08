@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
     return (
@@ -37,7 +38,7 @@ const Hero = () => {
                     </p>
                     <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                         <a href="#about" className="btn btn-primary">Discover My Journey</a>
-                        <a href="#contact" className="btn btn-outline">Collab & Connect</a>
+                        <Link to="/contact" className="btn btn-outline">Collab & Connect</Link>
                     </div>
                 </motion.div>
 

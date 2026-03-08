@@ -25,7 +25,7 @@ const Admin = () => {
                         <div className="card" style={{ padding: '0', borderRadius: '30px', overflow: 'hidden', backgroundColor: '#fff', border: '1px solid var(--border-color)', boxShadow: 'var(--shadow-lg)' }}>
                             <div style={{ position: 'relative', height: '400px', overflow: 'hidden' }}>
                                 {/* Using one of the uploaded images */}
-                                <img src="/images/DSC00688.JPG" alt="Administration" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                <img src="/images/1B.jpeg" alt="Administration" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                                 <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '2rem', background: 'linear-gradient(to top, rgba(0,0,0,0.8), transparent)' }}>
                                     <h2 style={{ color: '#fff', fontSize: '2rem', margin: 0 }}>Dean, SoIM</h2>
                                 </div>

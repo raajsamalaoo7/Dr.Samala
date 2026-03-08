@@ -26,7 +26,7 @@ const Hero = () => {
                     style={{ maxWidth: '600px' }}
                 >
                     <span style={{ color: 'var(--accent)', fontWeight: 600, letterSpacing: '1px', textTransform: 'uppercase', marginBottom: '1rem', display: 'block', fontSize: '0.9rem' }}>
-                        Academician • Administrator • Author • Speaker • Consultant • Mentor
+                        Academician • Administrator • Author • Speaker • Consultant
                     </span>
                     <h1 style={{ fontSize: 'clamp(3rem, 5vw, 4.5rem)', marginBottom: '1.5rem', lineHeight: '1.1' }}>
                         Dr. Samala Nagaraj
@@ -39,6 +39,25 @@ const Hero = () => {
                     <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                         <a href="#about" className="btn btn-primary">Discover My Journey</a>
                         <Link to="/contact" className="btn btn-outline">Collab & Connect</Link>
+                    </div>
+                </motion.div>
+
+                {/* Profile Picture */}
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    style={{ position: 'relative', display: 'flex', justifyContent: 'center' }}
+                >
+                    <div style={{
+                        width: '350px',
+                        height: '350px',
+                        borderRadius: '50%',
+                        overflow: 'hidden',
+                        border: '8px solid var(--surface)',
+                        boxShadow: 'var(--shadow-lg)'
+                    }}>
+                        <img src="/images/Dr. Samala Nagaraj_Profile Picture.jpeg" alt="Dr. Samala Nagaraj" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                     </div>
                 </motion.div>
 

@@ -11,6 +11,7 @@ import Admin from './pages/Admin';
 import BlogPage from './pages/BlogPage';
 import Social from './pages/Social';
 import ContactPage from './pages/ContactPage';
+import Gallery from './pages/Gallery';
 
 function ScrollToTop() {
     const { pathname } = useLocation();
@@ -37,6 +38,7 @@ function App() {
                         <Route path="/administration" element={<Admin />} />
                         <Route path="/blogs" element={<BlogPage />} />
                         <Route path="/social" element={<Social />} />
+                        <Route path="/gallery" element={<Gallery />} />
                         <Route path="/contact" element={<ContactPage />} />
                     </Routes>
                 </AnimatePresence>

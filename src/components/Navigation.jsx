@@ -24,6 +24,7 @@ const Navigation = () => {
         { name: 'Admin', path: '/administration' },
         { name: 'Blogs', path: '/blogs' },
         { name: 'Social', path: '/social' },
+        { name: 'Gallery', path: '/gallery' },
         { name: 'Contact', path: '/contact' },
     ];
 
@@ -40,10 +41,8 @@ const Navigation = () => {
         >
             <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <Link to="/" style={{ fontSize: '1.4rem', fontWeight: '700', fontFamily: 'var(--font-serif)', color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: '10px' }}>
-                    <div style={{ width: '32px', height: '32px', borderRadius: '50%', backgroundColor: 'var(--primary)', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1rem' }}>
-                        SN
-                    </div>
-                    Dr. Samala
+                    <img src="/logo.png" alt="Logo" style={{ width: '36px', height: '36px', borderRadius: '8px', objectFit: 'contain' }} />
+                    <span style={{ letterSpacing: '-0.5px' }}>Dr. Samala</span>
                 </Link>
 
                 {/* Desktop Nav */}

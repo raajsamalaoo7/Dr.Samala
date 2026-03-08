@@ -1,28 +1,36 @@
 :root {
-  /* Color Palette - Modern and Premium Corporate / Academic */
-  --primary: #1e3a8a; /* Deep Blue */
-  --primary-light: #3b82f6; 
-  --secondary: #0f172a; /* Slate 900 */
-  --accent: #f59e0b; /* Amber/Gold for contrast */
-  
-  --bg-color: #f8fafc; /* Very light slate */
+  /* Color Palette - Apple / LinkedIn Fusion */
+  --primary: #0a66c2;
+  /* LinkedIn Blue */
+  --primary-light: #4489D8;
+  --secondary: #1d1d1f;
+  /* Apple dark text/bg */
+  --accent: #0071e3;
+  /* Classic Apple Blue link color for accents */
+
+  --bg-color: #f5f5f7;
+  /* Apple light gray */
   --surface: #ffffff;
-  --text-main: #1e293b;
-  --text-muted: #64748b;
-  
-  --border-color: #e2e8f0;
-  
-  --font-sans: 'Inter', system-ui, sans-serif;
-  --font-serif: 'Playfair Display', Georgia, serif;
-  
-  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  
+  --surface-glass: rgba(255, 255, 255, 0.72);
+  --text-main: #1d1d1f;
+  --text-muted: #86868b;
+
+  --border-color: #d2d2d7;
+
+  --font-sans: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-serif: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  /* Opting for clean sans-serif everywhere for Apple feel */
+
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.12);
+
   /* Layout variables */
   --max-width: 1200px;
-  --nav-height: 80px;
-  --section-padding: 5rem 1rem;
+  --nav-height: 60px;
+  /* Slimmer Apple-style nav */
+  --section-padding: 6rem 1rem;
+  --border-radius: 18px;
 }
 
 * {
@@ -43,7 +51,12 @@ body {
   min-height: 100vh;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-serif);
   color: var(--secondary);
   line-height: 1.2;
@@ -105,11 +118,13 @@ img {
 .btn-primary {
   background-color: var(--primary);
   color: white;
+  border-radius: var(--border-radius);
 }
 
 .btn-primary:hover {
-  background-color: var(--secondary);
-  transform: translateY(-2px);
+  background-color: #004182;
+  /* Darker blue */
+  transform: scale(1.02);
   box-shadow: var(--shadow-md);
 }
 
@@ -126,8 +141,22 @@ img {
 
 /* Glassmorphism utility */
 .glass {
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: var(--surface-glass);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: var(--border-radius);
+}
+
+.card {
+  background-color: var(--surface);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
 }

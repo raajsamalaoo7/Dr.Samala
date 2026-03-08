@@ -25,8 +25,8 @@ const Hero = () => {
                     transition={{ duration: 0.8 }}
                     style={{ maxWidth: '600px' }}
                 >
-                    <span style={{ color: 'var(--accent)', fontWeight: 600, letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '1rem', display: 'block' }}>
-                        Academician • Administrator • Author • Mentor
+                    <span style={{ color: 'var(--accent)', fontWeight: 600, letterSpacing: '1px', textTransform: 'uppercase', marginBottom: '1rem', display: 'block', fontSize: '0.9rem' }}>
+                        Academician • Administrator • Author • Speaker • Consultant • Mentor
                     </span>
                     <h1 style={{ fontSize: 'clamp(3rem, 5vw, 4.5rem)', marginBottom: '1.5rem', lineHeight: '1.1' }}>
                         Dr. Samala Nagaraj
